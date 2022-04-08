@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1-Forms</title>
+</head>
+<body style="background-color: black;">
+    <header>
+        <h1 style="color: gold; font-style: italic;">Customer Service Portal</h1>
+        <p><img src="\Assignment-1\download.jfif" alt="Customer Services" height="100" width="100"></p>
+    </header>
+    <hr>
+    <h2 style="color: powderblue;">Enter Details to get contacted</h2>
+    <form method="post" action="mailto:sharan96321@gmail.com" enctype="text/plain">
+        <fieldset>
+            <legend style="color: aliceblue;">Personal Details</legend>
+            <label style="color: antiquewhite;">Name: </label>
+            <input type="text" name="yourName" placeholder="Enter your name" required>
+            <br><br>
+            <label style="color: antiquewhite;">Email: </label>
+            <input type="email" name="yourEmail" placeholder="Enter your Email" required>
+            <br><br>
+            <label style="color: antiquewhite;">Mobile Number: </label>
+            <input type="tel" name="yourPhone" placeholder="Enter your Mobie Number" required>
+            <br><br>
+            <label style="color: antiquewhite;">Gender: </label>
+            <input type="radio" name="yourGender" id="male" value="male" required>
+            <label for="male" style="color: aquamarine;">Male</label>
+            <input type="radio" name="yourGender" id="female" value="female" required>
+            <label for="female" style="color: aquamarine;">Female</label>
+            <br><br>
+            <label style="color: antiquewhite;">Age Group: </label>
+            <select name="yourAge">
+                <option>Select Age Group</option>
+                <option>18-22</option>
+                <option>23-27</option>
+                <option>28-32</option>
+                <option>above 32</option>
+            </select>
+            <br><br>
+            <label style="color: antiquewhite;">Address: </label>
+            <textarea name="yourAddress" rows="3" cols="15" placeholder="Enter your address" required></textarea>
+            <br><br>
+            <label style="color: antiquewhite;" >Message: </label>
+            <textarea name="yourMessage" rows="3" cols="15" placeholder="Enter your message" required></textarea>
+            <br><br>
+            <input type="submit" name="Submit" value="Submit" style="background-color: green; border: none; color: white; margin: 2px 4px; cursor: pointer;">
+            <input type="reset" name="Reset" value="Clear Form" style="background-color: crimson; border: none; color: white; margin: 2px 4px; cursor: pointer;">
+        </fieldset>
+    </form>
+</body>
+<footer>
+    <br>
+    <label style="color: plum;">Contact Us: </label>
+    <a href="https://www.google.com/">Click Here</a>
+    <br>
+    <label style="color: plum;">&copy; Copyright 2022, All Rights Reserved</label>
+</footer>
+</html>
